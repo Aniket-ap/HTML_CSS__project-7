@@ -124,7 +124,7 @@ nav img:last-child {
 .headphone-div img:first-child {
   position: absolute;
   top: 50%;
-  right: 67%;
+  right: 66%;
 }
 
 .discount-content {
@@ -173,4 +173,120 @@ nav img:last-child {
 
 .right-section button {
   margin: 0 auto;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  
+  nav{
+    flex-wrap: wrap;
+  }
+
+  nav img:last-child{
+    margin: 0 auto;
+  }
+
+  .nav-items{
+    margin-left: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-item{
+    margin: 0 10px;
+  }
+  
+  .intro-section{
+    flex-direction: column-reverse;
+  }
+
+  .headphone-div img:first-child{
+    display: none;
+  }
+
+  .discount-content{
+    display: none;
+  }
+
+  .left-section h1 {
+    font-size: 30px;
+  }
+
+  .action-btn{
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  nav{
+    flex-wrap: wrap;
+  }
+
+  nav img:last-child{
+    margin: 0 auto;
+  }
+
+  .nav-items{
+    margin-left: 10px;
+  }
+
+  .nav-item{
+    margin: 0 10px;
+  }
+  
+  .intro-section{
+    flex-direction: column-reverse;
+  }
+
+  .headphone-div img:first-child{
+    display: none;
+  }
+
+  .discount-content{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro-section{
+    flex-direction: column-reverse;
+  }
+
+  .headphone-div img:first-child{
+    display: none;
+  }
+
+  .discount-content{
+    display: none;
+  }
+
+  .nav-items{
+    margin-left: 30px;
+  }
+
+  .nav-item{
+    margin: 0 20px;
+  }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+  .discount-content {
+    left: 8%;
+  }
+}
+
+@media screen and (min-width: 1251px) and (max-width: 1500px) {
+  .discount-content {
+    left: 11%;
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  .discount-content {
+    left: 17%;
+  }
 }
